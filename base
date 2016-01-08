@@ -1,0 +1,24 @@
+package main
+
+import (
+  "fmt"
+  "regexp"
+  "bufio"
+  "os"
+  "io"
+  "strings"
+)
+
+func main()  {
+  in := bufio.NewReader(os.Stdin)
+
+  for  {
+    line, err := in.ReadString('\n')
+
+    if (err == io.EOF) {
+      break
+    }
+  }
+
+  fmt.Printf("end\n");
+}
